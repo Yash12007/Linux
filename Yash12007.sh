@@ -49,7 +49,7 @@ function projects_on_github() {
 
 function applications() {
     echo "Opening website, If the website isn't open then click on this url https://yash12007.github.io/home"
-    xdg-open "https://yash12007.github.io/home"
+    xdg-open "https://yash12007.github.io/"
 }
 
 function port_scanning() {
@@ -72,7 +72,7 @@ function update_tools() {
 
 function open_website() {
     echo "Opening website, If the website isn't open then click on this url https://yash12007.github.io/home"
-    xdg-open "https://yash12007.github.io/home"
+    xdg-open "https://yash12007.github.io/"
 }
 
 function quit_command() {
@@ -81,6 +81,7 @@ function quit_command() {
 }
 
 # Display ASCII art and help commands
+clear
 cat << "EOF"
 
 ██    ██  █████  ███████ ██   ██  ██ ██████   ██████   ██████  ███████ 
