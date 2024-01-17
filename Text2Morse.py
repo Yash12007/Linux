@@ -1,4 +1,17 @@
 import argparse
+import os
+import sys
+
+class Colors:
+    RED = '\033[91m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    BLUE = '\033[94m'
+    MAGENTA = '\033[95m'
+    CYAN = '\033[96m'
+    RESET = '\033[0m'
+
+os.system('cls' if sys.platform.startswith('win') else 'clear')
 
 morse_code_dict = {
     'A': '.-', 'B': '-...',
@@ -32,8 +45,16 @@ def main():
     args = parser.parse_args()
 
     result = text_to_morse(args.text)
-    print(f'Text: {args.text}')
-    print(f'Morse Code: {result}')
+    print(
+        f"""{Colors.GREEN}
+ _______ _______ _     _ _______ _______  _____   ______ _______ _______
+    |    |______  \___/     |    |  |  | |     | |_____/ |______ |______
+    |    |______ _/   \_    |    |  |  | |_____| |    \_ ______| |______
+                                                                        
+    {Colors.RESET}"""
+    )
+    print(f'{Colors.BLUE}Text: {args.text}{Colors.RESET}')
+    print(f'{Colors.CYAN}Morse Code: {result}{Colors.RESET}')
 
 if __name__ == '__main__':
     main()
