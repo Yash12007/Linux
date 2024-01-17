@@ -46,7 +46,7 @@ def main():
 
     result = text_to_morse(args.text)
     print(
-        f"""{Colors.GREEN}
+        f"""{Colors.CYAN}
  _______ _______ _     _ _______ _______  _____   ______ _______ _______
     |    |______  \___/     |    |  |  | |     | |_____/ |______ |______
     |    |______ _/   \_    |    |  |  | |_____| |    \_ ______| |______
@@ -54,7 +54,7 @@ def main():
     {Colors.RESET}"""
     )
     print(f'{Colors.BLUE}Text: {args.text}{Colors.RESET}')
-    print(f'{Colors.CYAN}Morse Code: {result}{Colors.RESET}')
+    print(f'{Colors.GREEN}Morse Code: {result}{Colors.RESET}')
 
 if __name__ == '__main__':
     main()
