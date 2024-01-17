@@ -25,5 +25,13 @@ or
 ```
 python3 Text2Morse <Text>
 ```
+3. Systeminfo.py (System information gathering tool)
+```
+python Systeminfo.py
+```
+or
+```
+python3 Systeminfo.py
+```
 # DON'T FORGET TO SUBSCRIBE
 https://www.youtube.com/@Yash12007
